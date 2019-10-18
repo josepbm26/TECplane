@@ -4,15 +4,16 @@ public class Persona {
 	
 	//Atributos de la clase
 	
-	String nombre, fechaNacimiento, nacionalidad, lugarOrigen, lugarDestino;
+	String nombre, fechaNacimiento, nacionalidad, lugarOrigen, lugarDestino, tipoUsuario;
 	int numeroPasaporte;
 	
-	public Persona (String nombre, String fechaNacimiento, String nacionalidad, String lugarOrigen, String lugarDestino, int numeroPasaporte) {
+	public Persona (String nombre, String fechaNacimiento, String nacionalidad, String lugarOrigen, String lugarDestino, String tipoUsuario, int numeroPasaporte) {
 		setNombre(nombre);
 		setFechaNacimiento(fechaNacimiento);
 		setNacionalidad(nacionalidad);
 		setLugarOrigen(lugarOrigen);
 		setLugarDestino(lugarDestino);
+		setTipoUsuario(tipoUsuario);
 		setNumeroPasaporte(numeroPasaporte);
 	}//Constructor
 	
@@ -58,6 +59,15 @@ public class Persona {
 	public void setLugarDestino(String lugarDestino) {
 		this.lugarDestino = lugarDestino;
 	}
+	
+	public String getTipoUsuario() {
+		return tipoUsuario;
+	}
+	
+	public void setTipoUsuario(String tipoUsuario) {
+		this.tipoUsuario = tipoUsuario;
+	}
+	
 
 	public int getNumeroPasaporte() {
 		return numeroPasaporte;
